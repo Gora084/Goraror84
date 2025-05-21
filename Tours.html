@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GoraTrails - Our Tours</title>
+  <style>
+    /* Same base styles as homepage */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+    a {
+      text-decoration: none;
+      color: #0066cc;
+    }
+    header {
+      background: #004aad;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      font-weight: 600;
+      color: white;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      color: #004aad;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #ffcc00;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+    .tour-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .tour-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .tour-card:hover {
+      transform: translateY(-8px);
+    }
+    .tour-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .tour-content {
+      padding: 1rem;
+    }
+    .tour-content h3 {
+      color: #004aad;
+      margin-bottom: 0.5rem;
+    }
+    .tour-content p {
+      color: #666;
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+    }
+    .btn-book {
+      background: #ffcc00;
+      color: #004aad;
+      padding: 0.6rem 1.2rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-align: center;
+      display: inline-block;
+    }
+    .btn-book:hover {
+      background: #e6b800;
+    }
+    footer {
+      background: #004aad;
+      color: white;
+      text-align: center;
+      padding: 1rem 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+    @media(max-width: 600px) {
+      nav a {
+        margin-left: 0.8rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GoraTrails</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tours.html">Tours</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Featured Tours</h2>
+
+    <div class="tour-list">
+      <div class="tour-card">
+        <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=600&q=80" alt="Himalayan Trek" />
+        <div class="tour-content">
+          <h3>Himalayan Spiritual Trek</h3>
+          <p>Experience the serenity of the Himalayas with guided meditation and breathtaking views.</p>
+          <button class="btn-book" onclick="alert('Thanks for your interest! Contact us to book this tour.')">Book Now</button>
+        </div>
+      </div>
+
+      <div class="tour-card">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80" alt="Rishikesh Yoga Retreat" />
+        <div class="tour-content">
+          <h3>Rishikesh Yoga & Meditation</h3>
+          <p>Immerse yourself in yoga practices and spiritual teachings by the Ganges.</p>
+          <button class="btn-book" onclick="alert('Thanks for your interest! Contact us to book this tour.')">Book Now</button>
+        </div>
+      </div>
+
+      <div class="tour-card">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=80" alt="Varanasi Pilgrimage" />
+        <div class="tour-content">
+          <h3>Varanasi Pilgrimage</h3>
+          <p>Discover India’s oldest city, sacred rituals, and ancient temples with expert guides.</p>
+          <button class="btn-book" onclick="alert('Thanks for your interest! Contact us to book this tour.')">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 GoraTrails | All rights reserved
+  </footer>
+
+</body>
+</html>
